@@ -90,7 +90,7 @@ const myPreference = ({ img, title, price, unit }) => {
                 id: 1234,
                 title,
                 description: 'Dispositivo móvil de Tienda e-commerce',
-                picture_url: url + img,
+                picture_url: url + img.substr(1),
                 quantity: Number(unit),
                 unit_price: Number(price)
             }
