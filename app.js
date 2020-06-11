@@ -97,6 +97,8 @@ const myPreference = ({ img, title, price, unit }) => {
         ],
         auto_return: "approved",
         payment_methods: {
+            excluded_payment_methods: [{id:"amex"}],
+            excluded_payment_types:[{id:"atm"}],
             installments: 6
         },
         external_reference: "nicolase.ledesma@gmail.com",
