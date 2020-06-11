@@ -61,12 +61,12 @@ app.use(express.static('assets'));
 
 
 
-app.listen(process.env.PORT || 5000)
+app.listen(process.env.PORT || 3000)
 
 
 
 const myPreference = ({ img, title, price, unit }) => {
-    const production = 'https://nikoledesma-mp-ecommerce-nodej.herokuapp.com/';
+    const production = 'https://nikoledesma-mp-ecommerce-nodej.herokuapp.com';
     const development = 'http://localhost:3000';
     const url = (process.env.NODE_ENV ? production : development);
     return ({
