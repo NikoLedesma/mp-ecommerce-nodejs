@@ -31,7 +31,7 @@ app.get('/tienda', function (req, res) {
 app.get('/detail', function (req, res) {
     mercadopago.preferences.create(myPreference(req.query))
         .then(result => { 
-            console.log(result);
+            console.log("id Preference : " + result.body.id);
             res.render('detail', { ...req.query, init_point: result.body.init_point 
             }) })
         .catch(error => {
