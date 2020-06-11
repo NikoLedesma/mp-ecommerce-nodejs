@@ -66,7 +66,7 @@ app.listen(3000);
 
 
 const myPreference = ({ img, title, price, unit }) => {
-    const production = 'https://mysite.com';
+    const production = 'https://nikoledesma-mp-ecommerce-nodej.herokuapp.com/';
     const development = 'http://localhost:3000';
     const url = (process.env.NODE_ENV ? production : development);
     return ({
