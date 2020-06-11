@@ -31,11 +31,11 @@ app.get('/tienda', function (req, res) {
 app.get('/detail', function (req, res) {
     mercadopago.preferences.create(myPreference(req.query))
         .then(result => { 
-            // console.log(result);
+            console.log(result);
             res.render('detail', { ...req.query, init_point: result.body.init_point 
             }) })
         .catch(error => {
-            // console.log(error);
+            console.log(error);
             res.render('detail', { ...req.query, init_point: response.body.init_point })
         });
 });
