@@ -49,11 +49,11 @@ app.get('/success', function (req, res) {
 })
 
 app.get('/failure', function (req, res) {
-    res.render('success', req);
+    res.render('failure', req);
 })
 
 app.get('/pending', function (req, res) {
-    res.render('success', req);
+    res.render('pending', req);
 })
 
 
