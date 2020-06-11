@@ -1,3 +1,4 @@
+<script src="https://www.mercadopago.com/v2/security.js" view="item"></script>
 
 <div class="as-search-wrapper" role="main">
     <div class="as-navtuck-wrapper">
@@ -78,13 +79,15 @@
                                     </h3>
                                 </div>
                                 <h3 >
-                                    {{ price }}
+                                    Precio: {{ price }}
                                 </h3>
                                 <h3 >
-                                    {{ unit }}
+                                    Unidades: {{ unit }}
                                 </h3>
                             </div>
-                            <button type="submit" class="mercadopago-button" formmethod="post">Pagar</button>
+                                <a href={{init_point}}>
+                                <button type="submit" class="mercadopago-button" >Pagar la compra</button>
+                                </a>
                         </div>
                     </div>
                 </div>
